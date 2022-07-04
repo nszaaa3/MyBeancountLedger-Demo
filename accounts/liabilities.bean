@@ -1,0 +1,26 @@
+;任务Liabilities在open日期前不可使用
+;贷款
+2022/07/01 open Liabilities:Mortgage:CN:YYB CNY             ;YY银行
+;信用卡
+2022/07/01 open Liabilities:CreditCard:CN:XXB CNY           ;招行信用卡
+2022/07/01 open Liabilities:CreditCard:CN:Alipay-Huabei CNY ;花呗
+
+2022/07/01 * "" "初始债务-房贷"
+    Liabilities:Mortgage:CN:YYB                             -123456.12 CNY
+    Equity:Opening-Balances
+2022/07/01 * "" "初始债务-信用卡-XX行"
+    Liabilities:CreditCard:CN:XXB                           -123.45 CNY
+    Equity:Opening-Balances
+2022/07/01 * "" "初始债务-支付宝-花呗"
+    Liabilities:CreditCard:CN:Alipay-Huabei                 -1234.56 CNY
+    Equity:Opening-Balances
+;初始分期债务
+2022/07/01 # "初始分期债务-支付宝-花呗 [MONTHLY REPEAT (3-0) TIMES]"   ;周期为月，共3期，已还0期
+    Liabilities:CreditCard:CN:Alipay-Huabei      -100.00 CNY       ;每期需还100元
+    Equity:Opening-Balances
+2022/07/01 # "初始分期债务-支付宝-花呗 [MONTHLY REPEAT (6-1) TIMES]"   ;周期为月，共6期，已还1期
+    Liabilities:CreditCard:CN:Alipay-Huabei      -100.00 CNY       ;每期需还100元
+    Equity:Opening-Balances
+2022/07/01 # "初始分期债务-支付宝-花呗 [MONTHLY REPEAT (12-2) TIMES]"  ;周期为月，共12期，已还2期
+    Liabilities:CreditCard:CN:Alipay-Huabei      -100.00 CNY       ;每期需还100元
+    Equity:Opening-Balances

@@ -1,0 +1,30 @@
+;初始财产
+;任何Assets在open日期前不可使用
+2022/07/01 open Assets:Current:Bank:CN:XXB      ;XX银行
+2022/07/01 open Assets:Current:Bank:CN:YYB      ;YY银行
+2022/07/01 open Assets:Current:Bank:CN:WX       ;微信
+2022/07/01 open Assets:Current:Bank:CN:Alipay   ;支付宝
+2022/07/01 open Assets:Deposit:BusCard:CN:LCT   ;郑州绿城通公交卡
+2022/07/01 open Assets:Deposit:SIM:CN:Mobile    ;手机卡移动
+2022/07/01 open Assets:Deposit:SIM:CN:Unicom    ;手机卡联通
+2022/07/01 * "" "YY银行-初始余额"
+    Assets:Current:Bank:CN:YYB                  +100.00 CNY
+    Equity:Opening-Balances
+2022/07/01 * "" "XX银行-初始余额"
+    Assets:Current:Bank:CN:XXB                  +100.00 CNY
+    Equity:Opening-Balances
+2022/07/01 * "" "微信-初始余额"
+    Assets:Current:Bank:CN:Alipay               +100.00 CNY
+    Equity:Opening-Balances
+2022/07/01 * "" "支付宝-初始余额"
+    Assets:Current:Bank:CN:Alipay               +100.00 CNY
+    Equity:Opening-Balances
+2022/07/01 * "" "公交卡-初始余额"
+    Assets:Deposit:BusCard:CN:LCT               +100.00 CNY
+    Equity:Opening-Balances
+2022/07/01 * "" "手机卡联通-初始余额"
+    Assets:Deposit:SIM:CN:Unicom                +100.00 CNY
+    Equity:Opening-Balances
+2022/07/01 * "" "手机卡移动-初始余额"
+    Assets:Deposit:SIM:CN:Mobile                +100.0 CNY
+    Equity:Opening-Balances

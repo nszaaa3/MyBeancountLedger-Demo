@@ -1,0 +1,15 @@
+;任何Income在open日期前不可使用
+;主动收入
+2022/07/01 open Income:CN:Salary:MyCompany CNY            ;上班公司收入
+;被动收入
+;奖金
+;赔付款
+;影响力：咨询、打赏等
+;退款返款
+;红包
+2022/07/01 open Income:CN:Interest:WX-RedEnvelope CNY     ;微信红包
+;投资
+2022/07/01 open Income:CN:Interest:Alipay-YEB CNY         ;余额宝
+;薅羊毛
+;其他
+2022/07/01 open Income:CN:Transfer:FromWho CNY            ;他人转账

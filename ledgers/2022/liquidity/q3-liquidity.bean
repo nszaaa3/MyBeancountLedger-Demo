@@ -1,0 +1,7 @@
+;q3账户间流水
+2022/07/01 * "" "公交卡充值"
+    Assets:Current:Bank:CN:Alipay     -100.00 CNY       ;从支付宝账户中减去100
+    Assets:Deposit:BusCard:CN:LCT     +100.00 CNY       ;在绿城通账户中加上100，需保持加减平衡
+2022/07/01 * "" "微信充值"
+    Assets:Current:Bank:CN:XXB        -0.50 CNY
+    Assets:Current:Bank:CN:WX         +0.50 CNY

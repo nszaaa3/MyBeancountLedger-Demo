@@ -1,0 +1,86 @@
+;任何Expenses在open日期前不可使用
+;居家
+2022/07/01 open Expenses:Home:Phone                     ;手机电话
+2022/07/01 open Expenses:Home:Mortgage:Interest         ;房贷利息
+2022/07/01 open Expenses:Home:Insurance:ZJX             ;重疾险
+2022/07/01 open Expenses:Home:Insurance:SX:MDW          ;寿险
+2022/07/01 open Expenses:Home:Insurance:YWX:MDW         ;意外险
+2022/07/01 open Expenses:Home:Insurance:Alipay:YLX      ;医疗险
+2022/07/01 open Expenses:Home:Insurance:CCX             ;财产险
+2022/07/01 open Expenses:Home:Water-Electricity-Gas     ;水电燃气
+2022/07/01 open Expenses:Home:WYF                       ;物业费
+2022/07/01 open Expenses:Home:Delivery                  ;快递费
+2022/07/01 open Expenses:Home:Haircut                   ;理发费
+2022/07/01 open Expenses:Home:Omission                  ;漏记款
+2022/07/01 open Expenses:Home:Other                     ;其他
+;人情
+2022/07/01 open Expenses:Relationship:Gift              ;礼物
+2022/07/01 open Expenses:Relationship:Relative          ;礼金
+2022/07/01 open Expenses:Relationship:PrePayment        ;代付款
+2022/07/01 open Expenses:Relationship:FilialPiety       ;孝敬
+2022/07/01 open Expenses:Relationship:RedEnvelope       ;红包
+2022/07/01 open Expenses:Relationship:Other             ;其他
+;购物
+2022/07/01 open Expenses:Shopping:Clothing              ;服饰鞋包
+2022/07/01 open Expenses:Shopping:Digital               ;电子数码
+2022/07/01 open Expenses:Shopping:Home                  ;家居百货
+2022/07/01 open Expenses:Shopping:Book                  ;买书
+2022/07/01 open Expenses:Shopping:Tea                   ;茶叶
+2022/07/01 open Expenses:Shopping:Makeup                ;化妆护肤
+2022/07/01 open Expenses:Shopping:Other                 ;其他
+;餐饮
+2022/07/01 open Expenses:Food:Breakfast                 ;早餐
+2022/07/01 open Expenses:Food:Lunch                     ;午餐
+2022/07/01 open Expenses:Food:Dinner                    ;晚餐
+2022/07/01 open Expenses:Food:Alcohol                   ;酒水
+2022/07/01 open Expenses:Food:DrinkFruit                ;饮料水果
+2022/07/01 open Expenses:Food:Vegetables                ;买菜原料
+2022/07/01 open Expenses:Food:Invite                    ;请客吃饭
+2022/07/01 open Expenses:Food:Omission                  ;漏记款
+2022/07/01 open Expenses:Food:Other                     ;其他
+;医疗健康
+2022/07/01 open Expenses:Health:Outpatient              ;门诊
+2022/07/01 open Expenses:Health:Medical                 ;药品
+2022/07/01 open Expenses:Health:Examination             ;体检
+2022/07/01 open Expenses:Health:Other                   ;其他
+;娱乐
+2022/07/01 open Expenses:Entertainment:Movie            ;电影
+2022/07/01 open Expenses:Entertainment:Travel           ;旅游度假
+2022/07/01 open Expenses:Entertainment:Hotel            ;酒店住宿
+2022/07/01 open Expenses:Entertainment:Media            ;网络流媒体服务
+2022/07/01 open Expenses:Entertainment:Show             ;演出门票
+2022/07/01 open Expenses:Entertainment:Other
+;交通
+2022/07/01 open Expenses:Transport:Airline              ;飞机
+2022/07/01 open Expenses:Transport:Railway              ;火车
+2022/07/01 open Expenses:Transport:Taxi                 ;打车
+2022/07/01 open Expenses:Transport:Transit              ;公交地铁
+2022/07/01 open Expenses:Transport:Car:Oil              ;加油
+2022/07/01 open Expenses:Transport:Car:Tolls            ;过路过桥
+2022/07/01 open Expenses:Transport:Car:Maintenance      ;保养维修
+2022/07/01 open Expenses:Transport:Car:Insurance        ;车险
+2022/07/01 open Expenses:Transport:Car:Parking          ;停车费
+2022/07/01 open Expenses:Transport:Car:Wash             ;洗车
+2022/07/01 open Expenses:Transport:Bike                 ;共享单车
+2022/07/01 open Expenses:Transport:Other                ;其他
+;五险一金
+2022/07/01 open Expenses:Government:Pension             ;养老保险
+2022/07/01 open Expenses:Government:Unemployment        ;失业保险
+2022/07/01 open Expenses:Government:Medical             ;医疗保险
+2022/07/01 open Expenses:Government:Injury              ;工伤保险
+2022/07/01 open Expenses:Government:Maternity           ;生育保险
+2022/07/01 open Expenses:Business:Medical               ;商业医疗保险
+;个人税
+2022/07/01 open Expenses:Government:IncomeTax           ;工资个税
+2022/07/01 open Expenses:Government:Customs             ;关税
+;投资
+2022/07/01 open Expenses:Invest:Dev                     ;技术基础设施费用
+2022/07/01 open Expenses:Invest:Study                   ;学习费用
+2022/07/01 open Expenses:Invest:Portfolio:Interest      ;利息支出
+2022/07/01 open Expenses:Invest:Cost                    ;手续费
+2022/07/01 open Expenses:Invest:Other                   ;其他
+;虚拟服务
+2022/07/01 open Expenses:Virtual:OnePlusCloud           ;一加云
+2022/07/01 open Expenses:Virtual:XiaoMiCloud            ;小米云
+2022/07/01 open Expenses:Virtual:AppleCloud             ;苹果云
+2022/07/01 open Expenses:Virtual:YouKu                  ;优酷VIP

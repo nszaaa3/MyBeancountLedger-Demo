@@ -1,0 +1,4 @@
+;7月份收入利息明细
+2022/07/01 * "利息-支付宝余额宝-昨日"
+    Assets:Current:Bank:CN:Alipay                +0.10 CNY
+    Income:CN:Interest:Alipay-YEB

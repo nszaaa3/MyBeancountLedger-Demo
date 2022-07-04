@@ -1,0 +1,4 @@
+;年度薪资及转账收入
+2022/07/01 * "" "微信红包"
+    Assets:Current:Bank:CN:WX     +2.00 CNY
+    Income:CN:Interest:WX-RedEnvelope

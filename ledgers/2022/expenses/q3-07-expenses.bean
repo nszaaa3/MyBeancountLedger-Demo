@@ -1,0 +1,13 @@
+;7月份消费明细
+2022/07/01 * "饮食-午餐-手擀面"
+    Liabilities:CreditCard:CN:Alipay-Huabei      -10.00 CNY
+    Expenses:Food:Lunch
+2022/07/02 * "家居百货-纸巾"
+    Liabilities:CreditCard:CN:Alipay-Huabei      -14.70 CNY
+    Expenses:Shopping:Home
+2022/07/03 * "Taxi-旭然园-南上庄"
+    Liabilities:CreditCard:CN:Alipay-Huabei      -11.69 CNY
+    Expenses:Transport:Taxi
+2022/07/03 * "共享单车-南上庄-旭然园"
+    Liabilities:CreditCard:CN:Alipay-Huabei      -1.5 CNY
+    Expenses:Transport:Bike

@@ -1,0 +1,14 @@
+;==main文件==
+;【一、账本设置】
+option "title" "My Ledger"
+option "operating_currency" "CNY"
+2022/07/01 custom "fava-option" "language" "zh"
+
+;【二、账户设置】
+include "accounts/*.bean"                       ;正则匹配账户文件
+
+;【三、交易记录】
+include "ledgers/*/*/*.bean"                    ;正则匹配账单文件-第一个*匹配年份，第二个*匹配用途，第三个*匹配具体.bean
+
+;【四、引入插件】
+plugin "beancount.plugins.forecast"             ;beancount官方提供的账单分期插件
