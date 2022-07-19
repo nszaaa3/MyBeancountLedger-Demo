@@ -23,17 +23,11 @@ MyLeder 我的账单
 ├── ledgers     我的账单
 │       └── YYYY                YYYY年度目录
 │             └── expenses            
-│                  └── qQ-MM-expenses.bean          Q季度M月份消费账单    
+│                  └── qQ-expenses.bean          Q季度消费账单    
 │             └── income
 │                  └── annual-income-transfer.bean  年度转账收入    
-│                  └── qQ-MM-income-interest.bean   Q季度M月份利息收入
+│                  └── qQ-income-interest.bean   Q季度利息收入
 │             └── liquidity
 │                  └── qQ-liquidity.bean            Q季度账户间流水
 │
 ~~~
-
-日期格式
-可为 ```YYYY-MM-DD```
-可为 ```YYYY/MM/DD```
-可为 ```YYYY-M-D```
-可为 ```YYYY/M/D```

@@ -1,26 +1,31 @@
-;任务Liabilities在open日期前不可使用
 ;贷款
-2022/07/01 open Liabilities:Mortgage:CN:YYB CNY             ;YY银行
-;信用卡
-2022/07/01 open Liabilities:CreditCard:CN:XXB CNY           ;招行信用卡
-2022/07/01 open Liabilities:CreditCard:CN:Alipay-Huabei CNY ;花呗
-
-2022/07/01 * "" "初始债务-房贷"
-    Liabilities:Mortgage:CN:YYB                             -123456.12 CNY
-    Equity:Opening-Balances
-2022/07/01 * "" "初始债务-信用卡-XX行"
-    Liabilities:CreditCard:CN:XXB                           -123.45 CNY
-    Equity:Opening-Balances
-2022/07/01 * "" "初始债务-支付宝-花呗"
-    Liabilities:CreditCard:CN:Alipay-Huabei                 -1234.56 CNY
-    Equity:Opening-Balances
-;初始分期债务
-2022/07/01 # "初始分期债务-支付宝-花呗 [MONTHLY REPEAT (3-0) TIMES]"   ;周期为月，共3期，已还0期
-    Liabilities:CreditCard:CN:Alipay-Huabei      -100.00 CNY       ;每期需还100元
-    Equity:Opening-Balances
-2022/07/01 # "初始分期债务-支付宝-花呗 [MONTHLY REPEAT (6-1) TIMES]"   ;周期为月，共6期，已还1期
-    Liabilities:CreditCard:CN:Alipay-Huabei      -100.00 CNY       ;每期需还100元
-    Equity:Opening-Balances
-2022/07/01 # "初始分期债务-支付宝-花呗 [MONTHLY REPEAT (12-2) TIMES]"  ;周期为月，共12期，已还2期
-    Liabilities:CreditCard:CN:Alipay-Huabei      -100.00 CNY       ;每期需还100元
-    Equity:Opening-Balances
+2022-07-01 open Liabilities:Mortgage:XXB:Billed              CNY        ;XX银行房贷当月应还
+;信用卡&消费信贷
+2022-07-01 open Liabilities:CreditCard:YYB:Billed            CNY        ;YY行信用卡-消费时使用Unbilled，账单日后，需手动将Unbilled金额归入Billed
+2022-07-01 open Liabilities:CreditCard:YYB:Unbilled          CNY        ;YY行信用卡-记账周期本月6日至次月5日，账单日5日，还款日23日，自行设定还款周期
+2022-07-01 open Liabilities:Wallet:Alipay-Huabei:Billed      CNY        ;支付宝花呗-消费时使用Unbilled，账单日后，需手动将Unbilled金额归入Billed
+2022-07-01 open Liabilities:Wallet:Alipay-Huabei:Unbilled    CNY        ;支付宝花呗-记账周期本月10日至次月9日，账单日10日，还款日20日，自行设定还款周期
+2022-07-01 * "" "初始债务-信用卡-YY当月账单"
+    Liabilities:CreditCard:YYB:Billed                                   -100.00  CNY
+    Expenses:Bank:InitialDebt
+2022-07-01 * "" "初始债务-支付宝-花呗-当月账单"
+    Liabilities:Wallet:Alipay-Huabei:Billed                             -100.00  CNY
+    Expenses:Bank:InitialDebt
+2022-07-01 # "初始分期债务-支付宝-花呗 [MONTHLY REPEAT 3 TIMES]"
+    Liabilities:Wallet:Alipay-Huabei:Billed
+    Expenses:Bank:StagingDebt                                           +100.00  CNY
+2022-07-01 # "初始分期债务-支付宝-花呗 [MONTHLY REPEAT 2 TIMES]"
+    Liabilities:Wallet:Alipay-Huabei:Billed
+    Expenses:Bank:StagingDebt                                           +100.00  CNY
+2022-07-01 # "初始分期债务-支付宝-花呗 [MONTHLY REPEAT 10 TIMES]"
+    Liabilities:Wallet:Alipay-Huabei:Billed
+    Expenses:Bank:StagingDebt                                           +100.00  CNY
+2022-07-01 # "初始分期债务-支付宝-花呗 [MONTHLY REPEAT 3 TIMES]"
+    Liabilities:Wallet:Alipay-Huabei:Billed
+    Expenses:Bank:StagingDebt                                           +100.00  CNY
+2022-07-01 # "初始分期债务-信用卡-YY [MONTHLY REPEAT 10 TIMES]"
+    Liabilities:CreditCard:YYB:Billed
+    Expenses:Bank:StagingDebt                                           +100.00  CNY
+2022-07-01 # "初始房贷 [MONTHLY UNTIL 2052-12-30]"
+    Liabilities:Mortgage:XXB:Billed
+    Expenses:Bank:Mortgage                                              +100.00  CNY
