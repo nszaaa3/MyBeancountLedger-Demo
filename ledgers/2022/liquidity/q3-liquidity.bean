@@ -1,4 +1,0 @@
-;q3账户间流水
-2022/07/05 * "充值-From 招商银行 To 支付宝"
-    Assets:Current:Bank:CMB                             -5055.00 CNY
-    Assets:Current:Wallet:Alipay                        +5055.00 CNY

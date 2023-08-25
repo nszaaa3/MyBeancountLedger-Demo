@@ -1,31 +1,11 @@
 ;贷款
-2022-07-01 open Liabilities:Mortgage:XXB:Billed              CNY        ;XX银行房贷当月应还
+2022-07-01 open Liabilities:Billed:XXB-Mortgage ;XXB银行贷款
 ;信用卡&消费信贷
-2022-07-01 open Liabilities:CreditCard:YYB:Billed            CNY        ;YY行信用卡-消费时使用Unbilled，账单日后，需手动将Unbilled金额归入Billed
-2022-07-01 open Liabilities:CreditCard:YYB:Unbilled          CNY        ;YY行信用卡-记账周期本月6日至次月5日，账单日5日，还款日23日，自行设定还款周期
-2022-07-01 open Liabilities:Wallet:Alipay-Huabei:Billed      CNY        ;支付宝花呗-消费时使用Unbilled，账单日后，需手动将Unbilled金额归入Billed
-2022-07-01 open Liabilities:Wallet:Alipay-Huabei:Unbilled    CNY        ;支付宝花呗-记账周期本月10日至次月9日，账单日10日，还款日20日，自行设定还款周期
-2022-07-01 * "" "初始债务-信用卡-YY当月账单"
-    Liabilities:CreditCard:YYB:Billed                                   -100.00  CNY
-    Expenses:Bank:InitialDebt
-2022-07-01 * "" "初始债务-支付宝-花呗-当月账单"
-    Liabilities:Wallet:Alipay-Huabei:Billed                             -100.00  CNY
-    Expenses:Bank:InitialDebt
-2022-07-01 # "初始分期债务-支付宝-花呗 [MONTHLY REPEAT 3 TIMES]"
-    Liabilities:Wallet:Alipay-Huabei:Billed
-    Expenses:Bank:StagingDebt                                           +100.00  CNY
-2022-07-01 # "初始分期债务-支付宝-花呗 [MONTHLY REPEAT 2 TIMES]"
-    Liabilities:Wallet:Alipay-Huabei:Billed
-    Expenses:Bank:StagingDebt                                           +100.00  CNY
-2022-07-01 # "初始分期债务-支付宝-花呗 [MONTHLY REPEAT 10 TIMES]"
-    Liabilities:Wallet:Alipay-Huabei:Billed
-    Expenses:Bank:StagingDebt                                           +100.00  CNY
-2022-07-01 # "初始分期债务-支付宝-花呗 [MONTHLY REPEAT 3 TIMES]"
-    Liabilities:Wallet:Alipay-Huabei:Billed
-    Expenses:Bank:StagingDebt                                           +100.00  CNY
-2022-07-01 # "初始分期债务-信用卡-YY [MONTHLY REPEAT 10 TIMES]"
-    Liabilities:CreditCard:YYB:Billed
-    Expenses:Bank:StagingDebt                                           +100.00  CNY
-2022-07-01 # "初始房贷 [MONTHLY UNTIL 2052-12-30]"
-    Liabilities:Mortgage:XXB:Billed
-    Expenses:Bank:Mortgage                                              +100.00  CNY
+
+2022-07-01 open Liabilities:Billed:XXB-CreditCard  ;XXB银行信用卡已出账单
+2022-07-01 open Liabilities:Unbilled:XXB-CreditCard ;XXB银行信用卡未出账单
+
+2022-07-01 open Liabilities:Payable:Alipay-Huabei ;支付宝应付款：指下单后未收货的状态
+2022-07-01 open Liabilities:Unbilled:Alipay-Huabei
+2022-07-01 open Liabilities:Billed:Alipay-Huabei
+

@@ -1,0 +1,24 @@
+2022-07-01 * "公交卡" "公交地铁"
+    Assets:Deposit:BusCard:XXC                                   -122.80                                                CNY
+    Equity:Average:BusCard
+2022-07-01 # "公交卡" "公交卡当季日均 [DAILY REPEAT 92 TIMES]"
+    Equity:Average:BusCard                                       -(122.80 / 92)                                         CNY
+    Expenses:Transport:BusMetro
+2022-07-05 * "公司附近" "午餐"
+    Liabilities:Unbilled:Alipay-Huabei                           -12.00                                                 CNY
+    Expenses:Food:Lunch
+2022-07-05 * "公司附近" "晚餐"
+    Liabilities:Unbilled:Alipay-Huabei                           -15.00                                                 CNY
+    Expenses:Food:Dinner
+2022-07-05 * "Godaddy" "购买域名60个月-XXX.com"
+    Liabilities:Unbilled:XXB-CreditCard                          -(583.77)                                              CNY
+    Equity:PrePayment:GoDaddy
+2022-07-05 # "Godaddy" "购买域名60个月-XXX.com [MONTHLY REPEAT 60 TIMES]"
+    Equity:PrePayment:GoDaddy                                    -(583.77 / 60)                                         CNY
+    Expenses:Virtual:DomainName
+2022-07-09 * "超市" "酒水"
+    Liabilities:Unbilled:Alipay-Huabei                           -20.00                                                 CNY
+    Expenses:Food:Alcohol
+2022-07-09 * "网约车" "Taxi"
+    Liabilities:Unbilled:Alipay-Huabei                           -23.79                                                 CNY
+    Expenses:Transport:Taxi

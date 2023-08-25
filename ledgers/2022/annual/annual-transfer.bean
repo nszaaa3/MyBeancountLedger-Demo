@@ -1,0 +1,9 @@
+2022-07-05 * "招行银行卡" "Sinoprof工资"
+    Assets:Current:Bank:XXB                                      +1234.00                                               CNY
+    Income:Salary:MyCompany
+2022-07-14 * "微信" "微信红包-张三"
+    Assets:Current:Bank:WX                                       +200.00                                                CNY
+    Income:Relationship:RedEnvelope
+2022-07-18 * "支付宝余额" "转账-法外狂徒"
+    Assets:Current:Bank:Alipay                                   +4321.00                                               CNY
+    Income:Relationship:Transfer

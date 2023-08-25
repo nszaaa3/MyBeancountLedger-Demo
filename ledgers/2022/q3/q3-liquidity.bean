@@ -1,0 +1,29 @@
+2022-07-05 * "支付宝余额" "招行银行卡转出"
+    Assets:Current:Bank:XXB                                      -5055.00                                               CNY
+    Assets:Current:Bank:Alipay                                   +5055.00                                               CNY
+    Expenses:Bank:Cost
+2022-07-10 * "支付宝花呗" "账单日"
+    Liabilities:Billed:Alipay-Huabei                             -1234.00                                                CNY
+    Liabilities:Unbilled:Alipay-Huabei                           +1234.00                                                CNY
+2022-07-12 * "XX行银行卡" "微信提现"
+    Assets:Current:Bank:WX                                       -200.50                                                CNY
+    Assets:Current:Bank:XXB                                      +200.30                                                CNY
+    Expenses:Bank:Cost
+2022-07-19 * "XX行银行卡" "支付宝提现"
+    Assets:Current:Bank:Alipay                                   -(6000.00)                                             CNY
+    Assets:Current:Bank:XXB                                      +(6000.00 * 0.999)                                     CNY
+    Expenses:Bank:Cost
+2022-07-21 * "XX银行" "房贷还款"
+    Assets:Current:Bank:XXB                                      -6666.66                                               CNY
+    Liabilities:Billed:XXB-Mortgage                              +6666.66                                               CNY
+2022-07-19 * "支付宝" "花呗还款"
+    Assets:Current:Bank:Alipay                                   -1234.00                                               CNY
+    Liabilities:Billed:Alipay-Huabei                             +1234.00                                               CNY
+    Expenses:Bank:Cost
+2022-07-19 * "XX银行" "信用卡还款"
+    Assets:Current:Bank:Alipay                                   -123.00                                                CNY
+    Liabilities:Billed:XXB-CreditCard                            +123.00                                                CNY
+    Expenses:Bank:Cost
+2022-08-01 * "公交公司" "公交地铁卡充值"
+    Assets:Current:Bank:Alipay                                   -30.00                                                 CNY
+    Assets:Deposit:BusCard:XXC                                   +30.00                                                 CNY

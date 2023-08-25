@@ -1,4 +1,17 @@
 ;权益账户
-;任何Equity在open日期前不可使用
-2022/07/01 open Equity:Opening-Balances
+2022-07-01 open Equity:Opening-Balances
+2022-07-01 open Equity:PrePayment:Rent
+2022-07-01 open Equity:PrePayment:Property
+2022-07-01 open Equity:PrePayment:Supermarket
+2022-07-01 open Equity:PrePayment:Ximalaya
+2022-07-01 open Equity:PrePayment:Clash
+2022-07-01 open Equity:PrePayment:TencentCloud
+2022-07-01 open Equity:PrePayment:OnePlusCloud
+2022-07-01 open Equity:PrePayment:GoDaddy
+2022-07-01 open Equity:StagingDebt:Alipay-Huabei
+2022-07-01 open Equity:StagingDebt:XXB-CreditCard
+2022-07-01 open Equity:StagingDebt:XXB-Mortgage
+2022-07-01 open Equity:Average:BusCard
+2022-07-01 open Equity:PrePayment:BikeCard
+
 ;初始化资产

@@ -1,0 +1,11 @@
+2022-08-01 # "中国联通" "宽带 [MONTHLY UNTIL 2023-02-01]"
+    Liabilities:Unbilled:Alipay-Huabei                           -100.00                                                CNY
+    Expenses:Home:Phone
+2022-08-12 * "XX行信用卡" "账单分期20220812-分12期"
+    Liabilities:Billed:XXB-CreditCard                            +(726.77)                                              CNY
+    Equity:StagingDebt:XXB-CreditCard
+2022-09-01 # "XX行信用卡" "账单分期20220812-分12期 [MONTHLY REPEAT 12 TIMES]"
+    Liabilities:Billed:XXB-CreditCard                            -(726.77 + 2.40 * 12) / 12                             CNY
+    Equity:StagingDebt:XXB-CreditCard                            +(726.77 / 12)                                         CNY
+    Expenses:Bank:StagingDebt
+

@@ -1,19 +1,22 @@
 ;初始财产
 ;任何Assets在open日期前不可使用
-2022/07/01 open Assets:Current:Bank:CN:XXB      ;XX银行
-2022/07/01 open Assets:Current:Bank:CN:YYB      ;YY银行
-2022/07/01 open Assets:Current:Bank:CN:WX       ;微信
-2022/07/01 open Assets:Current:Bank:CN:Alipay   ;支付宝
+2022-07-01 open Assets:Current:Bank:XXB      ;XX银行
+2022-07-01 open Assets:Current:Bank:YYB      ;YY银行
+2022-07-01 open Assets:Current:Bank:WX       ;微信
+2022-07-01 open Assets:Current:Bank:Alipay   ;支付宝
+2022-07-01 open Assets:Current:Cash:RMB      ;人民币现金
+2022-07-01 open Assets:Deposit:BusCard:XXC   ;公交卡                                          ;绿城通
 
-2022/07/01 * "" "XX银行-初始余额"
-    Assets:Current:Bank:CN:XXB                  +100.00 CNY
+
+2022-07-01 * "" "XX银行-初始余额"
+    Assets:Current:Bank:XXB                  +100.00 CNY
     Equity:Opening-Balances
-2022/07/01 * "" "YY银行-初始余额"
-    Assets:Current:Bank:CN:YYB                  +100.00 CNY
+2022-07-01 * "" "YY银行-初始余额"
+    Assets:Current:Bank:YYB                  +100.00 CNY
     Equity:Opening-Balances
-2022/07/01 * "" "微信-初始余额"
-    Assets:Current:Bank:CN:Alipay               +100.00 CNY
+2022-07-01 * "" "微信-初始余额"
+    Assets:Current:Bank:Alipay               +100.00 CNY
     Equity:Opening-Balances
-2022/07/01 * "" "支付宝-初始余额"
-    Assets:Current:Bank:CN:Alipay               +100.00 CNY
+2022-07-01 * "" "支付宝-初始余额"
+    Assets:Current:Bank:Alipay               +100.00 CNY
     Equity:Opening-Balances
